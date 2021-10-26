@@ -1,0 +1,17 @@
+.header__close-menu {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background: url(../../../images/close.svg);
+  background-size: cover;
+  border: none;
+  transform: rotate(-45deg);
+  transition: opacity .3s linear;
+  cursor: pointer;
+}
+
+.header__close-menu:hover {
+  opacity: 0.6;
+}

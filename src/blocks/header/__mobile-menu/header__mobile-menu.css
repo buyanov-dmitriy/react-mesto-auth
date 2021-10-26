@@ -1,0 +1,22 @@
+.header__mobile-menu {
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+  background: url(../../../images/mobile-menu-icon.svg);
+  width: 24px;
+  height: 18px;
+  background-size: contain;
+  border: none;
+  transition: opacity .3s linear;
+  cursor: pointer;
+}
+
+.header__mobile-menu:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 602px) {
+  .header__mobile-menu {
+    display: none;
+  }
+}

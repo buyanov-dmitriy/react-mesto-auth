@@ -1,0 +1,15 @@
+.open-route-page__form-field {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  width: 100%;
+  border: none;
+  border-bottom:  2px solid #CCCCCC;
+  box-sizing: content-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #CCCCCC;
+  background: transparent;
+}

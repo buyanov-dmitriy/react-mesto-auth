@@ -1,0 +1,13 @@
+.header__menu {
+  margin: 0;
+  padding: 0;
+  margin-top: 6px;
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 601px) {
+  .header__menu {
+    display: none;
+  }
+}

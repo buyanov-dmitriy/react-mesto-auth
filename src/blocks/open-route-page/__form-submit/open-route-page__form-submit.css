@@ -1,0 +1,27 @@
+.open-route-page__form-submit {
+  margin: 0;
+  padding: 0;
+  margin-top: 186px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 50px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.open-route-page__form-submit:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 601px) {
+  .open-route-page__form-submit {
+    margin-top: 143px;
+  }
+}

@@ -1,0 +1,20 @@
+.open-route-page__content {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 358px;
+  background-color: transparent;
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 601px) {
+  .open-route-page__content {
+    margin-top: 40px;
+    max-width: 260px;
+    gap: 20px;
+  }
+}
