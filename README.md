@@ -27,4 +27,4 @@
 
 Ссылка на проект в сети Интернет:
 
-https://buyanov-dmitriy.github.io/mesto-react-auth
+https://buyanov-dmitriy.github.io/react-mesto-auth
