@@ -1,4 +1,4 @@
-function OpenRoutePage(props) {
+function AuthPage(props) {
   return(
     <section className='open-route-page__content'>
       <form onSubmit={props.onSubmit} className='open-route-page__form' name={props.name}>
@@ -16,4 +16,4 @@ function OpenRoutePage(props) {
   )
 }
 
-export default OpenRoutePage;
+export default AuthPage;

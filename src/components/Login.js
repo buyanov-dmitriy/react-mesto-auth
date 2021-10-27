@@ -1,5 +1,5 @@
 import { useState } from "react";
-import OpenRoutePage from "./OpenRoutePage";
+import AuthPage from "./AuthPage";
 
 function Login(props) {
   const [userData, setUserData] = useState({ email: '', password: '' });
@@ -24,7 +24,7 @@ function Login(props) {
   }
 
   return(
-    <OpenRoutePage email={userData.email} password={userData.password} onSubmit={handleSubmit} onChange={handleChange} title='Вход' inputValue='Войти' name='login' />
+    <AuthPage email={userData.email} password={userData.password} onSubmit={handleSubmit} onChange={handleChange} title='Вход' inputValue='Войти' name='login' />
   )
 }
 

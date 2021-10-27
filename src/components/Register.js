@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import OpenRoutePage from "./OpenRoutePage";
+import AuthPage from "./AuthPage";
 
 function Register(props) {
   const [userData, setUserData] = useState({ email: '', password: '' });
@@ -22,13 +22,13 @@ function Register(props) {
   }
 
   return (
-    <OpenRoutePage email={userData.email} password={userData.password} onSubmit={handleSubmit} onChange={handleChange} title='Регистрация' inputValue='Зарегистрироваться' name='registration'>
+    <AuthPage email={userData.email} password={userData.password} onSubmit={handleSubmit} onChange={handleChange} title='Регистрация' inputValue='Зарегистрироваться' name='registration'>
       <section className='open-route-page__login-propose'>
         <p className='open-route-page__login-propose-caption'>
           Уже зарегистрированы? <Link className='open-route-page__login-propose-caption' to='/sign-in'>Войти</Link>
         </p>
       </section>
-    </OpenRoutePage>
+    </AuthPage>
   )
 }
 

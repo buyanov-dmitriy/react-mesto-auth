@@ -14,7 +14,7 @@ import { Redirect, Route, Switch, useHistory } from 'react-router';
 import Login from './Login';
 import ProtectedRoute from './ProtectedRoute';
 import * as authorisation from '../utils/authorisation';
-import RegistrationPopup from './RegistrationPopup';
+import InfoToolTip from './InfoToolTip';
 
 function App() {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
@@ -86,11 +86,9 @@ function App() {
   }
   function handleCardDelete(card) {
     api.deleteCardFromServer(card._id)
-      .then(result => {
-        const newCards = cards.filter((c) => {
-          return c._id !== card._id;
-        })
-        setCards(newCards);
+      .then(() => {
+        setCards((state) => state.filter((c) => c._id !== card._id));
+
       })
       .catch(error => {
         console.log(error);
@@ -198,7 +196,7 @@ function App() {
         <AddPlacePopup onAddPlace={handleAddPlace} isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} />
         <PopupWithForm name='view-card' title='Вы уверены?' inputValue="Да" />
         <ImagePopup card={selectedCard} onClose={closeAllPopups} />
-        <RegistrationPopup openedWithError={registrationPopup.openedWithError} isOpen={registrationPopup.isOpen} onClose={closeAllPopups} />
+        <InfoToolTip openedWithError={registrationPopup.openedWithError} isOpen={registrationPopup.isOpen} onClose={closeAllPopups} />
       </div>
     </CurrentUserContext.Provider>
   );

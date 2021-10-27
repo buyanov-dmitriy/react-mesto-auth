@@ -1,7 +1,7 @@
 import successRegistrationLogo from '../images/registred-icon.svg';
 import nonSuccessRegistrationLogo from '../images/nonregistred-icon.svg';
 
-function RegistrationPopup(props) {
+function InfoToolTip(props) {
   const successRegistrationText = 'Вы успешно зарегистрировались!';
   const nonSuccessRegistrationText = 'Что-то пошло не так! Попробуйте еще раз.'
   return (
@@ -15,4 +15,4 @@ function RegistrationPopup(props) {
   )
 }
 
-export default RegistrationPopup;
+export default InfoToolTip;
